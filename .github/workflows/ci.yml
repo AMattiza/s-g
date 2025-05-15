@@ -1,0 +1,11 @@
+name: Einfacher Check
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zeige Dateien
+        run: ls -la
