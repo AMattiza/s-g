@@ -1,18 +1,23 @@
-name: Sichtbarer Test
+name: Sichtbarer Check
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
-    name: Sichtbarer Check
+  check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Repo klonen
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Node-Version prüfen
-        run: node -v || echo "Node nicht installiert"
+      - name: Node installieren
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Beispiel-Test
+        run: |
+          echo "Starte Beispiel-Test"
+          echo "✅ Alles okay!"
