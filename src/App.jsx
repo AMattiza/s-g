@@ -273,10 +273,11 @@ const reorders = reorderCustomersSet.size;
       <p className="mt-2 text-2xl font-semibold">{fmtNum(totalNew)}</p>
       <p className="text-sm text-gray-500">Summe aller Neukunden</p>
     </div>
-    <div className="p-4 bg-gray-100 rounded-xl text-center">
-     <h3 className="font-medium">Kunden mit ≥1 Nachbestellung</h3>
-<p className="text-sm text-gray-500">Einzigartige Kunden mit mindestens einer Nachbestellung</p>
-    </div>
+   <div className="p-4 bg-gray-100 rounded-xl text-center">
+  <h3 className="font-medium">Kunden mit ≥1 Nachbestellung</h3>
+  <p className="mt-2 text-2xl font-semibold">{fmtNum(reorders)}</p>
+  <p className="text-sm text-gray-500">Einzigartige Kunden mit mindestens einer Nachbestellung</p>
+</div>
     <div className="p-4 bg-gray-100 rounded-xl text-center">
       <h3 className="font-medium">Kunden gesamt (letzter Monat)</h3>
      <p className="mt-2 text-2xl font-semibold">{fmtNum(activeCustomersInLastMonth)}</p>
