@@ -30,7 +30,7 @@ export default function App() {
     increaseInterval: 4,
     increaseAmount: 1,
     reorderRate: 75,
-    reorderCycle: 3,
+    reorderCycle: 4,
     license1Gross: 1.4,
     postcardCost: 0.1,
     graphicShare: 0.3,
